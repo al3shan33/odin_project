@@ -1,0 +1,250 @@
+@font-face {
+    font-family: GothikReg;
+    src: url(./fonts/GraphikRegular.otf);
+}
+
+@font-face {
+    font-family: GothikMed;
+    src: url(./fonts/GraphikMedium.otf);
+}
+
+@font-face {
+    font-family: GothikLight;
+    src: url(./fonts/GraphikExtralight.otf);
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #666;
+    font-family: GothikReg;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* HEADER STYLES */
+
+header {
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 250px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.logo {
+    color: #f9faf8;
+    font-family: GothikMed;
+    font-size: 24px;
+}
+
+/* HERO SECTION STYLES */
+
+.hero-title {
+    display: flex;
+    padding: 150px 250px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f2937;
+}
+
+.hero-content {
+    flex: 2;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-family: GothikMed;
+    letter-spacing: 2px;
+    color: #f9faf8;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.3;
+    color: #e5e7eb;
+}
+
+.hero-content p:nth-child(3) {
+    margin-bottom: 30px;
+}
+
+.hero-img {
+    /* height: 500px; */
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./img/main-img.jpg);
+    padding: 150px;
+}
+
+.hero-content button {
+    background-color: #3882f6;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 14px;
+    color: #f9faf8;
+    font-size: 16px;
+}
+
+/* DAILY CHECKIN SECTION STYLES */
+
+.daily-checkin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 350px;
+    gap: 50px;
+}
+
+.daily-checkin h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: GothikMed;
+}
+
+.cards,
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    gap: 50px;
+}
+
+.card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    gap: 20px;
+}
+
+
+
+.card-img {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card .img-1 {
+    background-image: url(./img/stay-active.jpg);
+}
+
+.card .img-2 {
+    background-image: url(./img/come-together.jpg);
+    background-position: top;
+}
+
+.card .img-3 {
+    background-image: url(./img/eat-healty.jpg);
+}
+
+.card button {
+    background: #1f2937;
+    color: #f9faf8;
+    text-transform: uppercase;
+    border: none;
+    padding: 7px 10px;
+}
+
+.card h3 { 
+    color: #333;
+    font-size: 20px;
+    font-family: GothikReg;
+    letter-spacing: -1px;
+}
+
+/* QUOTE SECTION STYLE */
+
+.quote {
+    height: 40vh;
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    font-family: GothikLight;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.quote p {
+    font-family: GothikReg;
+    font-size: 30px;
+}
+
+/* FOOTER SECTION STYLE */
+
+.call-action {
+    display: flex;
+    margin: 100px 250px;
+    padding: 50px 200px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 10px;
+}
+
+.call-action h2 {
+    font-size: 28px;
+    font-family: GothikReg;
+}
+
+.call-action p {
+    font-size: 20px;
+    color: #f9faf891;
+}
+
+.call-action button {
+    width: 200px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: solid 2px #f9faf8;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.copyright {
+    background-color: #1f2937;
+    text-align: center;
+    color: #f9faf891;
+    padding: 40px 0;
+    font-size: 25px;
+}
